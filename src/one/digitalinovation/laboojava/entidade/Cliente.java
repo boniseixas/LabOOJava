@@ -17,8 +17,13 @@ public class Cliente {
     private String cpf;
 
     public Cliente() {
-        this.nome = "Fulano";
-        this.cpf = "123456789011";
+        //this.nome = "Fulano";
+        //this.cpf = "123456789011";
+    }
+
+    public Cliente(String nome, String cpf) {
+        this.nome = nome;
+        this.cpf = cpf;
     }
 
     public String getNome() {
@@ -41,4 +46,9 @@ public class Cliente {
     public String toString() {
         return "Cliente{ nome='" + nome + "'}";
     }
+
+    public void salvar(Cliente cliente) {
+
+    }
+
 }

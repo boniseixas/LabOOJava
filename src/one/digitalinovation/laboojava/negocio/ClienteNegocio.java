@@ -43,11 +43,18 @@ public class ClienteNegocio {
      * @param cliente Novo cliente que terá acesso a aplicação
      */
     //TODO Fazer a inclusão de cliente
+    public void cadastrarCliente(Cliente novoCliente) {
 
+        this.bancoDados.adicionarCliente(novoCliente);
+        System.out.println("Cliente cadastrado com sucesso");
+    }
     /**
      * Exclui um cliente específico.
      * @param cpf CPF do cliente
      */
     //TODO Fazer a exclusão de cliente
+    public void excluirCliente(String cpf) {
+        
+    }
 
 }
