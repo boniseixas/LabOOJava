@@ -68,7 +68,7 @@ public class PedidoNegocio {
         //Setar cliente no pedido
         novoPedido.setCliente(bancoDados.getCliente());
         //Calcular e set total
-        novoPedido.setTotla(calcularTotal(novoPedido.getProdutos(), cupom));
+        novoPedido.setTotal(calcularTotal(novoPedido.getProdutos(), cupom));
         //Adicionar no banco
         bancoDados.adicionarPedido(novoPedido);
         //Mensagem
